@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		346C1FEC00403C4BE7C151DC /* Pods_Melatect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07490F0E687D2FD0E3866792 /* Pods_Melatect.framework */; };
+		8900C9CE25787B7900501450 /* malignOrBenignLoadingScreen.json in Resources */ = {isa = PBXBuildFile; fileRef = 8900C9CD25787B7900501450 /* malignOrBenignLoadingScreen.json */; };
+		890A0247256C072B00724AE6 /* moleScanDetectorModel1_copy.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 890A0246256C072B00724AE6 /* moleScanDetectorModel1_copy.mlmodel */; };
+		890A0259256C231600724AE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 890A0258256C231600724AE6 /* Main.storyboard */; };
+		892F0A4B255B228C00C03569 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892F0A4A255B228C00C03569 /* TabBar.swift */; };
+		8938E2C4256079160064656B /* Doctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8938E2C3256079160064656B /* Doctor.swift */; };
+		894072CA256CB48E000187FF /* MoleEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894072C9256CB48E000187FF /* MoleEntry.swift */; };
+		894E5D8D255706BC0091641D /* MyDoctorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894E5D8C255706BC0091641D /* MyDoctorsViewController.swift */; };
+		895D387D255241E5006001FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895D387C255241E5006001FD /* AppDelegate.swift */; };
+		895D387F255241E5006001FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895D387E255241E5006001FD /* SceneDelegate.swift */; };
+		895D3886255241EA006001FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 895D3885255241EA006001FD /* Assets.xcassets */; };
+		897E94E8255247E500726EC4 /* doctor.json in Resources */ = {isa = PBXBuildFile; fileRef = 897E94E7255247E500726EC4 /* doctor.json */; };
+		897E94EB255247EC00726EC4 /* phone.json in Resources */ = {isa = PBXBuildFile; fileRef = 897E94EA255247EC00726EC4 /* phone.json */; };
+		897E94EF2552496200726EC4 /* PreviewToSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897E94EE2552496200726EC4 /* PreviewToSignUpViewController.swift */; };
+		8984BB9725659A700089B808 /* RiskAssessmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984BB9625659A700089B808 /* RiskAssessmentViewController.swift */; };
+		89BF9E842555084800DDCE29 /* DoctorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BF9E822555084800DDCE29 /* DoctorTableViewCell.swift */; };
+		89BF9E852555084800DDCE29 /* DoctorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89BF9E832555084800DDCE29 /* DoctorTableViewCell.xib */; };
+		89CCE62E257871E500DD18F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89CCE62D257871E500DD18F6 /* LaunchScreen.storyboard */; };
+		89DB75652567424D002DE110 /* MratConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DB75642567424C002DE110 /* MratConstants.swift */; };
+		89DEF8C42569EB82002B8F34 /* ScanMoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DEF8C32569EB82002B8F34 /* ScanMoleViewController.swift */; };
+		89DEF8C72569F74B002B8F34 /* DisplayDiagnosisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DEF8C62569F74B002B8F34 /* DisplayDiagnosisViewController.swift */; };
+		89DEF8D4256AB011002B8F34 /* UIView+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DEF8D3256AB011002B8F34 /* UIView+Snapshot.swift */; };
+		89FB3B202575494D009F33E3 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FB3B1E2575494D009F33E3 /* SideMenuViewController.swift */; };
+		89FB3B212575494D009F33E3 /* SideMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89FB3B1F2575494D009F33E3 /* SideMenuViewController.xib */; };
+		89FB3B2C257590E0009F33E3 /* SideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FB3B2A257590E0009F33E3 /* SideMenuTableViewCell.swift */; };
+		89FB3B2D257590E0009F33E3 /* SideMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89FB3B2B257590E0009F33E3 /* SideMenuTableViewCell.xib */; };
+		89FB3B352575A15F009F33E3 /* SideMenuWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FB3B342575A15F009F33E3 /* SideMenuWebViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		07490F0E687D2FD0E3866792 /* Pods_Melatect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Melatect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7016618E731DDADE41390327 /* Pods-Melatect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Melatect.release.xcconfig"; path = "Target Support Files/Pods-Melatect/Pods-Melatect.release.xcconfig"; sourceTree = "<group>"; };
+		8900C9CD25787B7900501450 /* malignOrBenignLoadingScreen.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = malignOrBenignLoadingScreen.json; sourceTree = "<group>"; };
+		890A0246256C072B00724AE6 /* moleScanDetectorModel1_copy.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = moleScanDetectorModel1_copy.mlmodel; sourceTree = "<group>"; };
+		890A0258256C231600724AE6 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		892F0A4A255B228C00C03569 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		8938E2C3256079160064656B /* Doctor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doctor.swift; sourceTree = "<group>"; };
+		894072C9256CB48E000187FF /* MoleEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoleEntry.swift; sourceTree = "<group>"; };
+		894E5D8C255706BC0091641D /* MyDoctorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDoctorsViewController.swift; sourceTree = "<group>"; };
+		895D3879255241E5006001FD /* Melatect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Melatect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		895D387C255241E5006001FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		895D387E255241E5006001FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		895D3885255241EA006001FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		895D388A255241EA006001FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		897E94E7255247E500726EC4 /* doctor.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = doctor.json; sourceTree = "<group>"; };
+		897E94EA255247EC00726EC4 /* phone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = phone.json; sourceTree = "<group>"; };
+		897E94EE2552496200726EC4 /* PreviewToSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewToSignUpViewController.swift; sourceTree = "<group>"; };
+		8984BB9625659A700089B808 /* RiskAssessmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiskAssessmentViewController.swift; sourceTree = "<group>"; };
+		89BF9E822555084800DDCE29 /* DoctorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorTableViewCell.swift; sourceTree = "<group>"; };
+		89BF9E832555084800DDCE29 /* DoctorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoctorTableViewCell.xib; sourceTree = "<group>"; };
+		89CCE62D257871E500DD18F6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		89DB75642567424C002DE110 /* MratConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MratConstants.swift; sourceTree = "<group>"; };
+		89DEF8C32569EB82002B8F34 /* ScanMoleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanMoleViewController.swift; sourceTree = "<group>"; };
+		89DEF8C62569F74B002B8F34 /* DisplayDiagnosisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayDiagnosisViewController.swift; sourceTree = "<group>"; };
+		89DEF8D3256AB011002B8F34 /* UIView+Snapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Snapshot.swift"; sourceTree = "<group>"; };
+		89FB3B1E2575494D009F33E3 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		89FB3B1F2575494D009F33E3 /* SideMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuViewController.xib; sourceTree = "<group>"; };
+		89FB3B2A257590E0009F33E3 /* SideMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewCell.swift; sourceTree = "<group>"; };
+		89FB3B2B257590E0009F33E3 /* SideMenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuTableViewCell.xib; sourceTree = "<group>"; };
+		89FB3B342575A15F009F33E3 /* SideMenuWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuWebViewController.swift; sourceTree = "<group>"; };
+		FD29A08BA525279D0283D83D /* Pods-Melatect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Melatect.debug.xcconfig"; path = "Target Support Files/Pods-Melatect/Pods-Melatect.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		895D3876255241E5006001FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				346C1FEC00403C4BE7C151DC /* Pods_Melatect.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08CD7B21F3D16F3AFC074C44 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07490F0E687D2FD0E3866792 /* Pods_Melatect.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4978B452F9CDD3B61543D261 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD29A08BA525279D0283D83D /* Pods-Melatect.debug.xcconfig */,
+				7016618E731DDADE41390327 /* Pods-Melatect.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8938E2C62560791F0064656B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8938E2C3256079160064656B /* Doctor.swift */,
+				89DB75642567424C002DE110 /* MratConstants.swift */,
+				894072C9256CB48E000187FF /* MoleEntry.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		895D3870255241E5006001FD = {
+			isa = PBXGroup;
+			children = (
+				895D387B255241E5006001FD /* Melatect */,
+				895D387A255241E5006001FD /* Products */,
+				4978B452F9CDD3B61543D261 /* Pods */,
+				08CD7B21F3D16F3AFC074C44 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		895D387A255241E5006001FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				895D3879255241E5006001FD /* Melatect.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		895D387B255241E5006001FD /* Melatect */ = {
+			isa = PBXGroup;
+			children = (
+				895D387C255241E5006001FD /* AppDelegate.swift */,
+				895D387E255241E5006001FD /* SceneDelegate.swift */,
+				890A0246256C072B00724AE6 /* moleScanDetectorModel1_copy.mlmodel */,
+				8938E2C62560791F0064656B /* Model */,
+				899C1B532552465A00C0C8E4 /* View */,
+				89ADF8932555012800B7971F /* Controller */,
+				89FB3B3225759FEA009F33E3 /* Side Menu */,
+				89CCE62D257871E500DD18F6 /* LaunchScreen.storyboard */,
+				895D388A255241EA006001FD /* Info.plist */,
+				895D3885255241EA006001FD /* Assets.xcassets */,
+			);
+			path = Melatect;
+			sourceTree = "<group>";
+		};
+		899C1B532552465A00C0C8E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				890A0258256C231600724AE6 /* Main.storyboard */,
+				89BF9E832555084800DDCE29 /* DoctorTableViewCell.xib */,
+				897E94E7255247E500726EC4 /* doctor.json */,
+				8900C9CD25787B7900501450 /* malignOrBenignLoadingScreen.json */,
+				897E94EA255247EC00726EC4 /* phone.json */,
+				892F0A4A255B228C00C03569 /* TabBar.swift */,
+				89DEF8D3256AB011002B8F34 /* UIView+Snapshot.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		89ADF8932555012800B7971F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				897E94EE2552496200726EC4 /* PreviewToSignUpViewController.swift */,
+				894E5D8C255706BC0091641D /* MyDoctorsViewController.swift */,
+				89BF9E822555084800DDCE29 /* DoctorTableViewCell.swift */,
+				8984BB9625659A700089B808 /* RiskAssessmentViewController.swift */,
+				89DEF8C32569EB82002B8F34 /* ScanMoleViewController.swift */,
+				89DEF8C62569F74B002B8F34 /* DisplayDiagnosisViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		89FB3B3225759FEA009F33E3 /* Side Menu */ = {
+			isa = PBXGroup;
+			children = (
+				89FB3B1F2575494D009F33E3 /* SideMenuViewController.xib */,
+				89FB3B2B257590E0009F33E3 /* SideMenuTableViewCell.xib */,
+				89FB3B1E2575494D009F33E3 /* SideMenuViewController.swift */,
+				89FB3B2A257590E0009F33E3 /* SideMenuTableViewCell.swift */,
+				89FB3B342575A15F009F33E3 /* SideMenuWebViewController.swift */,
+			);
+			path = "Side Menu";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		895D3878255241E5006001FD /* Melatect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 895D388D255241EA006001FD /* Build configuration list for PBXNativeTarget "Melatect" */;
+			buildPhases = (
+				49661E74EAB6335848673F6F /* [CP] Check Pods Manifest.lock */,
+				895D3875255241E5006001FD /* Sources */,
+				895D3876255241E5006001FD /* Frameworks */,
+				895D3877255241E5006001FD /* Resources */,
+				79E6C1FCA89DE142F7B0C435 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Melatect;
+			productName = MoleScan;
+			productReference = 895D3879255241E5006001FD /* Melatect.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		895D3871255241E5006001FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					895D3878255241E5006001FD = {
+						CreatedOnToolsVersion = 12.1;
+					};
+				};
+			};
+			buildConfigurationList = 895D3874255241E5006001FD /* Build configuration list for PBXProject "Melatect" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 895D3870255241E5006001FD;
+			productRefGroup = 895D387A255241E5006001FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				895D3878255241E5006001FD /* Melatect */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		895D3877255241E5006001FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				890A0259256C231600724AE6 /* Main.storyboard in Resources */,
+				897E94EB255247EC00726EC4 /* phone.json in Resources */,
+				8900C9CE25787B7900501450 /* malignOrBenignLoadingScreen.json in Resources */,
+				895D3886255241EA006001FD /* Assets.xcassets in Resources */,
+				897E94E8255247E500726EC4 /* doctor.json in Resources */,
+				89FB3B212575494D009F33E3 /* SideMenuViewController.xib in Resources */,
+				89BF9E852555084800DDCE29 /* DoctorTableViewCell.xib in Resources */,
+				89FB3B2D257590E0009F33E3 /* SideMenuTableViewCell.xib in Resources */,
+				89CCE62E257871E500DD18F6 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		49661E74EAB6335848673F6F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Melatect-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79E6C1FCA89DE142F7B0C435 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Melatect/Pods-Melatect-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Melatect/Pods-Melatect-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Melatect/Pods-Melatect-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		895D3875255241E5006001FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89DEF8C72569F74B002B8F34 /* DisplayDiagnosisViewController.swift in Sources */,
+				89FB3B202575494D009F33E3 /* SideMenuViewController.swift in Sources */,
+				894072CA256CB48E000187FF /* MoleEntry.swift in Sources */,
+				89FB3B2C257590E0009F33E3 /* SideMenuTableViewCell.swift in Sources */,
+				895D387D255241E5006001FD /* AppDelegate.swift in Sources */,
+				89DB75652567424D002DE110 /* MratConstants.swift in Sources */,
+				890A0247256C072B00724AE6 /* moleScanDetectorModel1_copy.mlmodel in Sources */,
+				895D387F255241E5006001FD /* SceneDelegate.swift in Sources */,
+				894E5D8D255706BC0091641D /* MyDoctorsViewController.swift in Sources */,
+				892F0A4B255B228C00C03569 /* TabBar.swift in Sources */,
+				89BF9E842555084800DDCE29 /* DoctorTableViewCell.swift in Sources */,
+				897E94EF2552496200726EC4 /* PreviewToSignUpViewController.swift in Sources */,
+				89DEF8D4256AB011002B8F34 /* UIView+Snapshot.swift in Sources */,
+				89FB3B352575A15F009F33E3 /* SideMenuWebViewController.swift in Sources */,
+				8984BB9725659A700089B808 /* RiskAssessmentViewController.swift in Sources */,
+				89DEF8C42569EB82002B8F34 /* ScanMoleViewController.swift in Sources */,
+				8938E2C4256079160064656B /* Doctor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		895D388B255241EA006001FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		895D388C255241EA006001FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		895D388E255241EA006001FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD29A08BA525279D0283D83D /* Pods-Melatect.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = NTC9D823P9;
+				INFOPLIST_FILE = Melatect/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.4;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.tonnelier.melatect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		895D388F255241EA006001FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7016618E731DDADE41390327 /* Pods-Melatect.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = NTC9D823P9;
+				INFOPLIST_FILE = Melatect/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.4;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.tonnelier.melatect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		895D3874255241E5006001FD /* Build configuration list for PBXProject "Melatect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				895D388B255241EA006001FD /* Debug */,
+				895D388C255241EA006001FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		895D388D255241EA006001FD /* Build configuration list for PBXNativeTarget "Melatect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				895D388E255241EA006001FD /* Debug */,
+				895D388F255241EA006001FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 895D3871255241E5006001FD /* Project object */;
+}

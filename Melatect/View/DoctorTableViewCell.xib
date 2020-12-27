@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="DoctorTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="DoctorTableViewCell" id="KGk-i7-Jjw" customClass="DoctorTableViewCell" customModule="MoleScan" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="205"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="205"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A16-hI-2Pr" userLabel="DoctorTableViewCellView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="188"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" text="Primary Care Doctor" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ahD-yR-az8">
+                                <rect key="frame" x="12" y="10" width="156.33333333333334" height="37.333333333333336"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" systemColor="systemGrayColor"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="w28-mK-Fyt">
+                                <rect key="frame" x="15" y="55.333333333333336" width="297" height="121.66666666666666"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nLF-kz-8Nj">
+                                        <rect key="frame" x="0.0" y="0.0" width="297" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9k-4z-gSr">
+                                                <rect key="frame" x="8" y="5" width="58" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="58" id="rXl-Bm-rCS"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="16"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="AOU-Uc-awY">
+                                                <rect key="frame" x="106" y="5" width="161" height="34"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="AOU-Uc-awY" firstAttribute="leading" secondItem="N9k-4z-gSr" secondAttribute="trailing" constant="40" id="6sv-04-aAb"/>
+                                            <constraint firstItem="N9k-4z-gSr" firstAttribute="leading" secondItem="nLF-kz-8Nj" secondAttribute="leading" constant="8" id="Ldq-6d-iJg"/>
+                                            <constraint firstAttribute="bottom" secondItem="AOU-Uc-awY" secondAttribute="bottom" constant="1" id="TLF-Fc-2y1"/>
+                                            <constraint firstItem="AOU-Uc-awY" firstAttribute="top" secondItem="nLF-kz-8Nj" secondAttribute="top" constant="5" id="e6s-dV-Hc2"/>
+                                            <constraint firstItem="N9k-4z-gSr" firstAttribute="top" secondItem="nLF-kz-8Nj" secondAttribute="top" constant="5" id="flf-XP-ydf"/>
+                                            <constraint firstAttribute="trailing" secondItem="AOU-Uc-awY" secondAttribute="trailing" constant="30" id="kKF-Xi-xl8"/>
+                                            <constraint firstAttribute="bottom" secondItem="N9k-4z-gSr" secondAttribute="bottom" constant="5" id="qd6-no-VTg"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iNl-dP-6Ix">
+                                        <rect key="frame" x="0.0" y="41" width="297" height="39.666666666666657"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BMJ-p7-YxM">
+                                                <rect key="frame" x="8" y="5.0000000000000018" width="58" height="29.666666666666671"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="58" id="BXP-cC-Zg4"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="16"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="D0t-05-NTn">
+                                                <rect key="frame" x="106" y="5" width="161" height="33.666666666666664"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="BMJ-p7-YxM" firstAttribute="leading" secondItem="iNl-dP-6Ix" secondAttribute="leading" constant="8" id="FKV-7M-I1b"/>
+                                            <constraint firstAttribute="trailing" secondItem="D0t-05-NTn" secondAttribute="trailing" constant="30" id="IiL-fV-5rz"/>
+                                            <constraint firstItem="D0t-05-NTn" firstAttribute="leading" secondItem="BMJ-p7-YxM" secondAttribute="trailing" constant="40" id="KPS-Lf-N93"/>
+                                            <constraint firstItem="D0t-05-NTn" firstAttribute="top" secondItem="iNl-dP-6Ix" secondAttribute="top" constant="5" id="XZv-JM-Lb3"/>
+                                            <constraint firstAttribute="bottom" secondItem="BMJ-p7-YxM" secondAttribute="bottom" constant="5" id="aH5-VZ-jAX"/>
+                                            <constraint firstItem="BMJ-p7-YxM" firstAttribute="top" secondItem="iNl-dP-6Ix" secondAttribute="top" constant="5" id="f2r-oM-6fo"/>
+                                            <constraint firstAttribute="bottom" secondItem="D0t-05-NTn" secondAttribute="bottom" constant="1" id="omA-Ra-Eez"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kX6-Yd-1yb">
+                                        <rect key="frame" x="0.0" y="81.666666666666657" width="297" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone #" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DaW-Vf-er2">
+                                                <rect key="frame" x="8" y="5" width="58" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="58" id="k0h-aI-ZKv"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="16"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ftz-Rf-zBV">
+                                                <rect key="frame" x="106" y="5" width="161" height="34"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="ftz-Rf-zBV" secondAttribute="trailing" constant="30" id="1OI-gd-95d"/>
+                                            <constraint firstItem="ftz-Rf-zBV" firstAttribute="top" secondItem="kX6-Yd-1yb" secondAttribute="top" constant="5" id="4Gn-L4-PJw"/>
+                                            <constraint firstItem="DaW-Vf-er2" firstAttribute="leading" secondItem="kX6-Yd-1yb" secondAttribute="leading" constant="8" id="NYA-uX-Dku"/>
+                                            <constraint firstAttribute="bottom" secondItem="DaW-Vf-er2" secondAttribute="bottom" constant="5" id="esR-0G-FPK"/>
+                                            <constraint firstItem="ftz-Rf-zBV" firstAttribute="leading" secondItem="DaW-Vf-er2" secondAttribute="trailing" constant="40" id="khX-Aj-jR5"/>
+                                            <constraint firstItem="DaW-Vf-er2" firstAttribute="top" secondItem="kX6-Yd-1yb" secondAttribute="top" constant="5" id="qiH-zx-lWl"/>
+                                            <constraint firstAttribute="bottom" secondItem="ftz-Rf-zBV" secondAttribute="bottom" constant="1" id="yXo-ZD-ODt"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RV3-QX-MIh">
+                                <rect key="frame" x="256" y="11.666666666666664" width="23" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22.670000000000002" id="5KV-7d-S3W"/>
+                                    <constraint firstAttribute="width" constant="23" id="g6N-ef-5E8"/>
+                                </constraints>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" backgroundImage="phone.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="phoneButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Ssv-u7-rp6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTk-eC-5YG">
+                                <rect key="frame" x="287" y="11.333333333333314" width="25" height="18.000000000000004"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="FEC-60-dg4"/>
+                                    <constraint firstAttribute="height" constant="22" id="uGX-AL-yGi"/>
+                                </constraints>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" backgroundImage="envelope" catalog="system"/>
+                                <connections>
+                                    <action selector="emailButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="m6T-0l-IhR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.83742743730000002" green="0.88429921869999994" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ahD-yR-az8" firstAttribute="top" secondItem="A16-hI-2Pr" secondAttribute="top" constant="10" id="0fr-Ze-ZyT"/>
+                            <constraint firstItem="w28-mK-Fyt" firstAttribute="leading" secondItem="A16-hI-2Pr" secondAttribute="leading" constant="15" id="6Ii-pv-dM6"/>
+                            <constraint firstItem="NTk-eC-5YG" firstAttribute="top" secondItem="A16-hI-2Pr" secondAttribute="top" constant="8.9999999999999822" id="8bx-x8-vfM"/>
+                            <constraint firstAttribute="bottom" secondItem="ahD-yR-az8" secondAttribute="bottom" constant="140.66666666666666" id="GVO-00-Y9u"/>
+                            <constraint firstItem="w28-mK-Fyt" firstAttribute="top" secondItem="ahD-yR-az8" secondAttribute="bottom" constant="8" id="WIp-cR-obb"/>
+                            <constraint firstItem="RV3-QX-MIh" firstAttribute="top" secondItem="A16-hI-2Pr" secondAttribute="top" constant="10" id="XYd-06-HDt"/>
+                            <constraint firstAttribute="trailing" secondItem="NTk-eC-5YG" secondAttribute="trailing" constant="8" id="YBV-qf-2gp"/>
+                            <constraint firstItem="NTk-eC-5YG" firstAttribute="leading" secondItem="RV3-QX-MIh" secondAttribute="trailing" constant="8" id="iu2-lw-Ke5"/>
+                            <constraint firstAttribute="trailing" secondItem="w28-mK-Fyt" secondAttribute="trailing" constant="8" id="mQ1-6L-uWr"/>
+                            <constraint firstItem="w28-mK-Fyt" firstAttribute="top" secondItem="ahD-yR-az8" secondAttribute="bottom" constant="8" id="mtc-Gi-Q9x"/>
+                            <constraint firstItem="ahD-yR-az8" firstAttribute="leading" secondItem="A16-hI-2Pr" secondAttribute="leading" constant="12" id="sh4-J6-n0b"/>
+                            <constraint firstAttribute="bottom" secondItem="w28-mK-Fyt" secondAttribute="bottom" constant="11" id="x6U-ao-0E8"/>
+                            <constraint firstAttribute="trailing" secondItem="ahD-yR-az8" secondAttribute="trailing" constant="151.66666666666666" id="xVZ-N5-igv"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="A16-hI-2Pr" secondAttribute="bottom" constant="17" id="5a0-xr-ZM5"/>
+                    <constraint firstAttribute="trailing" secondItem="A16-hI-2Pr" secondAttribute="trailing" id="9UI-dG-Mac"/>
+                    <constraint firstItem="A16-hI-2Pr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="HvZ-5Z-0qk"/>
+                    <constraint firstItem="A16-hI-2Pr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="PFB-OS-Ghx"/>
+                    <constraint firstAttribute="leading" secondItem="A16-hI-2Pr" secondAttribute="leading" id="ZGf-hH-Tdg"/>
+                    <constraint firstItem="A16-hI-2Pr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="e8m-lc-o94"/>
+                    <constraint firstItem="A16-hI-2Pr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="mdR-tE-Ku3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="doctorTableViewCellView" destination="A16-hI-2Pr" id="6qi-Zg-rdj"/>
+                <outlet property="doctorTypeTextView" destination="ahD-yR-az8" id="IQp-ij-PBa"/>
+                <outlet property="emailTextView" destination="D0t-05-NTn" id="8lD-YJ-zFM"/>
+                <outlet property="nameTextView" destination="AOU-Uc-awY" id="WX7-Kx-Nt7"/>
+                <outlet property="phoneNumberTextView" destination="ftz-Rf-zBV" id="VCK-Tv-XpE"/>
+            </connections>
+            <point key="canvasLocation" x="135.98130841121494" y="79.373650107991367"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="envelope" catalog="system" width="128" height="93"/>
+        <image name="phone.fill" catalog="system" width="128" height="114"/>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
